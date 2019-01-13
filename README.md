@@ -2,11 +2,15 @@
 
 This is a quickly thrown-together baby environment monitoring setup based on ESP8266 and DHT22. It's initially a direct rip-off from [this losant guide](https://www.losant.com/blog/getting-started-with-the-esp8266-and-dht22-sensor).
 
+## Quick Start
+
 To get going, heed the library versions indicated in [the environment setup guide](https://docs.losant.com/getting-started/losant-iot-dev-kits/environment-setup/). Also edit `libraries/PubSubClient/src/PubSubClient.h` to have the following:
 
 ```
 #define MQTT_MAX_PACKET_SIZE 256
 ```
+
+You'll also need to populate `secrets.h`, see `secrets.h.dist` for a template.
 
 Setting up a gorgeous losant dashboard is an exercise for the reader.
 
